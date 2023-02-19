@@ -1,0 +1,95 @@
+.business {
+    background: url("../img/bg-business.jpg") $businessBgColor;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top; 
+    padding: 203px 0px 202px;
+    .business__container {
+        max-width: 770px;
+        .business__title {
+            text-transform: uppercase;
+            margin-bottom: 80px;
+            & span {
+                color: $accentTextColor;
+            }
+        }
+        .business__text{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            padding-bottom: 10px;
+        }
+        .business__list {
+            margin-bottom: 80px;
+            .list__item {
+                list-style-type: "\2011	\00A0";
+                margin: 0px 10px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        .buttons-block {
+            display: flex;
+            gap: 40px;
+            .buttons-block__order {
+                width: 183px;
+                height: 43px;
+                text-transform: uppercase;
+                color: $buttonTextColor;
+                border: 1px solid $buttonBorderColor;
+                border-radius: 4px;
+                background: $buttonColor;
+                transition: all 0.5s;
+                &:hover {
+                    color: $button2TextColor;
+                    border: 1px solid $button2BorderColor;
+                    background: $button2Color;
+                    transition: all 0.5s;
+                }
+            }
+            .buttons-block__detailed {
+                width: 183px;
+                height: 43px;
+                text-transform: uppercase;
+                color: $button2TextColor;
+                border: 1px solid $button2BorderColor;
+                border-radius: 4px;
+                background: $button2Color;
+                &:hover {
+                    color: $buttonTextColor;
+                    border: 1px solid $buttonBorderColor;
+                    background: $buttonColor;
+                    transition: all 0.5s;
+                }
+            }
+        }
+        
+    }
+}
+
+@media ($media_md) {
+    .business {
+        padding: 103px 0px 102px;
+    }
+}
+
+@media ($media_sm2) {
+    .business {
+        .business__container{
+            h1 {
+                font-size: 2.5rem;
+            }
+            .buttons-block {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                .buttons-block__order, .buttons-block__detailed {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

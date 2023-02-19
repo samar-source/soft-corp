@@ -1,0 +1,130 @@
+.footer {
+    background-color: $footerBgColor;
+    .footer__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 15px;
+        .copyright {
+            position: relative;
+            display: block;
+            width: 100%;
+            max-width: 346px;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            color: $footerTextColor;
+            border-right: 1px solid $footerItemsSeparator;
+            padding-right: 55px;
+            // &::after {
+            //     content: "";
+            //     position: absolute;
+            //     top: 0;
+            //     bottom: 0;
+            //     right: 0;
+            //     left: auto;
+            //     display: block;
+            //     width: 1px;
+            //     height: 18px;
+            //     background-color: $footerItemsSeparator;
+            // }
+        }
+        .solucionis-system {
+            display: flex;
+            justify-content: space-between;
+            gap: 38px;
+            padding: 0px 20px;
+            .solucionis-system__item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                height: 20px;
+                .pay-icon {
+                    width: 20px;
+                    height: 100%;
+                    color: $footerTextColor;
+                }
+                input[type=submit] {
+                    height: 14px;
+                    color: $linkTextColor;
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        color: $link2TextColor;
+                    }
+                }
+            }
+        }
+        .contact {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            max-width: 346px;
+            border-left: 1px solid $footerItemsSeparator;
+            flex-wrap: wrap;
+            .contact__item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                height: 20px;
+                padding-left: 20px;
+                .contact__icon {
+                    width: 20px;
+                    height: 100%;
+                }
+                .contact__link {
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: $link2TextColor;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ($media_lg2) {
+    .footer {
+        .footer__content  {
+            flex-direction: column;
+            gap: 20px;
+            .contact {
+                justify-content: center;
+                padding-left: 0px;
+                border: none;
+                .contact__item {
+                    padding: 0px 10px;
+                }
+            }
+            .copyright {
+                text-align: center;
+                padding: 0px 10px;
+                border: none;
+                order: 1;
+            }
+        }
+    }
+}
+
+@media ($media_sm2) {
+    .footer {
+        .footer__content  {
+            gap: 38px;
+            .solucionis-system {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .contact {
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                width: 167px;
+                margin-left: 30px;
+            }
+        }
+    }
+}

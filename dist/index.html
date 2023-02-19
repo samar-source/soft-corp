@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>LoremIpsum.Net</title>
+	
+</head>
+
+<body>
+<header class="header">
+	<div class="header__content container">
+		<a href="#"><img src="img/icons/icons.svg#logo" alt="logo" class="header__logo logo"></a>
+		<div class="header__menu menu">
+			<div class="menu__icon">
+				<span></span>
+			</div>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li><a data-goto=".business" href="#" class="menu__link _active">Бизнес</a></li>
+					<li><a data-goto=".about-us" href="#" class="menu__link menu__link--disabled">О нас</a></li> <!-- pointer-events: none; -->
+					<li><a data-goto=".prices" href="#" class="menu__link menu__link--disabled">Цены</a></li> <!-- pointer-events: none; -->
+					<li><a data-goto=".order" href="#" class="menu__link">Оформить заказ</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<main>
+    <!-- <div class="container"> -->
+        <div class="business">
+    <div class="container">
+        <div class="business__container">
+            <h1 class="business__title"><span lang="en-EN" data-aos="fade-right" style="display:inline-block">Lorem ipsum</span> dolor sit amet consectetur <span lang="en-EN" data-aos="fade-left" style="display:inline-block">adipiscing</span></h1>
+            <div>
+                <p class="business__text"><span lang="en-EN">At vero eos et accusamus et iusto odio dignissimos ducimus!</span></p>
+                <ul class="business__list list">
+                    <li class="list__item"><span lang="en-EN"></span>Totam rem aperiam eaque ipsa</span></li>
+                    <li class="list__item"><span lang="en-EN"></span>Sit voluptatem accusantium doloremque laudantium</span></li>
+                    <li class="list__item"><span lang="en-EN"></span>Sed ut perspiciatis, unde omnis iste natus error</span></li>
+                </ul>
+            </div>
+            <div class="business__buttons buttons-block" data-aos="zoom-in-right">
+                <button class="buttons-block__order">Заказать</button>
+                <button class="buttons-block__detailed">Подробнее</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="order">
+    <div class="container">
+        <h2 class="order__title">Оформление <span data-aos="fade-left" style="display:inline-block">Заказа</span></h2>
+        <p class="order__text--top">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        <div class="order__scheme scheme">
+            <div class="scheme__item">
+                <span class="scheme__icon search" data-aos="flip-up"></span>
+                <p class="scheme__text"><span lang="en-EN">Lorem ipsum dolor sit amet</span></p>
+                <span class="scheme__separator"></span>
+            </div>
+            <div class="scheme__item">
+                <span class="scheme__icon rate" data-aos="flip-up"></span>
+                <p class="scheme__text"><span lang="en-EN"></span>Сonsecteturadipiscing elit</span></p>
+                <span class="scheme__separator"></span>
+            </div>
+            <div class="scheme__item">
+                <span class="scheme__icon letter" data-aos="flip-up"></span>
+                <p class="scheme__text"><span lang="en-EN">Sed do eiusmod tempor</span></p>
+                <span class="scheme__separator"></span>
+            </div>
+            <div class="scheme__item">
+                <span class="scheme__icon mail" data-aos="flip-up"></span>
+                <p class="scheme__text"><span lang="en-EN">Esse cillum doloreeu fugiat</span></p>
+                <span class="scheme__separator"></span>
+            </div>
+            <div class="scheme__item">
+                <span class="scheme__icon money" data-aos="flip-up"></span>
+                <p class="scheme__text"><span lang="en-EN">Excepteur sint occaecat cupidatat non proident</span></p>
+                <span class="scheme__separator"></span>
+            </div>
+        </div>
+        <form class="form" action="#" method="post" target="_blank">
+            <div class="form__item select" data-state="">
+                <div class="select__title" data-default="Выберите тип системы">Выберите тип системы</div>
+                <div class="select__content">
+                    <input id="selectOption1" class="select__input" type="radio" name="selectOption" checked />
+                    <label for="selectOption1" class="select__label">Sed ut perspiciatis
+                    </label>
+                    <input id="selectOption2" class="select__input" type="radio" name="selectOption" />
+                    <label for="selectOption2" class="select__label">Nemo enim ipsam
+                    </label>
+                    <input id="selectOption2" class="select__input" type="radio" name="selectOption" />
+                    <label for="selectOption3" class="select__label">Et harum quidem</label>
+                    <input id="selectOption4" class="select__input" type="radio" name="selectOption" />
+                    <label for="selectOption4" class="select__label">Temporibus autem
+                    </label>
+                    <input id="selectOption5" class="select__input" type="radio" name="selectOption" />
+                    <label for="selectOption5" class="select__label">Itaque earum rerum</label>
+                </div>
+            </div>
+            <div class="form__item">
+                <input type="email" name="formEmail[]" placeholder="Ваш e-mail" id="email" required>
+            </div>
+            <div class="form__item">
+                <input type="text" name="formText[]" placeholder="Ваше имя" id="name" required>
+            </div>
+            <div class="form__item range">
+                <label class="range__label">
+                    <p class="range__text"><span lang="en-EN">Sed&#160;ut perspiciatis, unde omnis iste&#160;natus</span></p>
+                    <p><span id="range__value">75&#160;&#37;</span></p>
+                </label>
+                <input type="range" name="formRange[]" id="range" min="0" max="100" value="75" step="1" onchange="document.getElementById('range__value').innerHTML = this.value;">
+            </div>
+            <div class="form__item add-file">
+                <label class="add-file__label" for="file">
+                    <svg class="add-file__icon"><use x="0" y="0" xlink:href="img/icons/icons.svg#add" /></svg> Прикрепить файл
+                </label>
+                <input type="file" name="formFile[]" id="file" accept="application/msword, application/vnd.ms-excel, application/pdf">
+            </div>
+            <button type="submit" id="submit" data-aos="zoom-in">Отправить</button>
+        </form>
+    </div>
+</div>
+    <!-- </div> -->
+</main>
+	<footer class="footer">
+		<div class="footer__content container">
+			<p class="footer__copyright copyright"><span lang="en-EN">&#169;&#160;2018&#160;&#171;LoremIpsum.net&#187;</span> Все&#160;права&#160;защищены.</p>
+			<ul class="footer__solucionis-system solucionis-system">
+				<li>
+					<form class="solucionis-system__item qiwi" id=qiwi-pay name=qiwi-pay method="POST" action="https://w.qiwi.ru/setInetBill_utf.do" target="_blank">
+						<svg class="pay-icon"><use x="0" y="0" xlink:href="img/icons/icons.svg#qiwi" /></svg>
+						<input type="submit" value="Qiwi wallet">
+					</form> 
+				</li>
+				<li>
+					<form class="solucionis-system__item yandex-money" id=yandex-pay name=yandex-pay method="POST" action="https://yoomoney.ru/quickpay/button?" target="_blank">
+						<svg class="pay-icon"><use x="0" y="0" xlink:href="img/icons/icons.svg#yandex-money" /></svg>
+						<input type="submit" value="Yandex Money">
+					</form> 
+				</li>
+				<li>
+					<form class="solucionis-system__item web-money" id=web-pay name=web-pay method="POST" action="https://merchant.webmoney.ru/lmi/payment.asp" target="_blank">
+						<svg class="pay-icon"><use x="0" y="0" xlink:href="img/icons/icons.svg#web-money" /></svg>
+						<input type="hidden" name="LMI_PAYMENT_AMOUNT" value="1.0">
+						<input type="hidden" name="LMI_PAYMENT_DESC" value="тестовый платеж">
+						<input type="hidden" name="LMI_PAYMENT_NO" value="1">
+						<input type="hidden" name="LMI_PAYEE_PURSE" value="Z145179295679">
+						<input type="hidden" name="LMI_SIM_MODE" value="0"> 
+						<input type="submit" value="Web Money">
+					</form> 
+				</li>
+			</ul>
+			<ul class="footer__contact contact">
+				<li class="contact__item">
+					<svg class="contact__icon"><use x="0" y="0" xlink:href="img/icons/icons.svg#mailFooter" /></svg>
+					<a class="contact__link" href="info@ipsum228.com">info@ipsum228.com</a>
+				</li>
+				<li class="contact__item">
+					<svg class="contact__icon"><use x="0" y="0" xlink:href="img/icons/icons.svg#vk" /></svg>
+					<a class="contact__link" href="https://vk.com/feed">Мы вконтакте</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="js/app.min.js"></script>
+	</body>
+
+	</html>

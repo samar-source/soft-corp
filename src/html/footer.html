@@ -1,0 +1,45 @@
+	<footer class="footer">
+		<div class="footer__content container">
+			<p class="footer__copyright copyright"><span lang="en-EN">&#169;&#160;2018&#160;&#171;LoremIpsum.net&#187;</span> Все&#160;права&#160;защищены.</p>
+			<ul class="footer__solucionis-system solucionis-system">
+				<li>
+					<form class="solucionis-system__item qiwi" id=qiwi-pay name=qiwi-pay method="POST" action="https://w.qiwi.ru/setInetBill_utf.do" target="_blank">
+						<svg class="pay-icon"><use x="0" y="0" xlink:href="@img/icons/icons.svg#qiwi" /></svg>
+						<input type="submit" value="Qiwi wallet">
+					</form> 
+				</li>
+				<li>
+					<form class="solucionis-system__item yandex-money" id=yandex-pay name=yandex-pay method="POST" action="https://yoomoney.ru/quickpay/button?" target="_blank">
+						<svg class="pay-icon"><use x="0" y="0" xlink:href="@img/icons/icons.svg#yandex-money" /></svg>
+						<input type="submit" value="Yandex Money">
+					</form> 
+				</li>
+				<li>
+					<form class="solucionis-system__item web-money" id=web-pay name=web-pay method="POST" action="https://merchant.webmoney.ru/lmi/payment.asp" target="_blank">
+						<svg class="pay-icon"><use x="0" y="0" xlink:href="@img/icons/icons.svg#web-money" /></svg>
+						<input type="hidden" name="LMI_PAYMENT_AMOUNT" value="1.0">
+						<input type="hidden" name="LMI_PAYMENT_DESC" value="тестовый платеж">
+						<input type="hidden" name="LMI_PAYMENT_NO" value="1">
+						<input type="hidden" name="LMI_PAYEE_PURSE" value="Z145179295679">
+						<input type="hidden" name="LMI_SIM_MODE" value="0"> 
+						<input type="submit" value="Web Money">
+					</form> 
+				</li>
+			</ul>
+			<ul class="footer__contact contact">
+				<li class="contact__item">
+					<svg class="contact__icon"><use x="0" y="0" xlink:href="@img/icons/icons.svg#mailFooter" /></svg>
+					<a class="contact__link" href="info@ipsum228.com">info@ipsum228.com</a>
+				</li>
+				<li class="contact__item">
+					<svg class="contact__icon"><use x="0" y="0" xlink:href="@img/icons/icons.svg#vk" /></svg>
+					<a class="contact__link" href="https://vk.com/feed">Мы вконтакте</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="js/app.min.js"></script>
+	</body>
+
+	</html>

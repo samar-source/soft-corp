@@ -1,0 +1,100 @@
+// Colors
+$white: #FFFFFF;
+$black: #000000;
+$havelockBlue: #3E9CDC;
+$vulcan: #10101D;
+$brightGray: #3D4050;
+$silver: #BBBBBB;
+$silver2: #C3C3C3;
+$silver3: #C4C4C4;
+$stormGray: #6F6D7B;
+$charade: #272733;
+$shark: #2A2B30;
+$pictonBlue: #43ABF0;
+$pictonBlue2: #42A9ED;
+$jellyBean: #286690;
+
+
+// Background colors for sections
+$businessBgColor: $white;
+$orderBgColor: $charade;
+$footerBgColor: $brightGray;
+
+// Main menu colors
+$menuBgColor: $vulcan; //rgba($menuBgColor, 0.9);
+$menuItemTextColor: $white;
+$hoverMenuItemTextColor: $pictonBlue;
+$activeMenuItemTextColor: $pictonBlue;
+$burgerColor: $white;
+
+// Text colors
+$textColor: $white;
+$headerTextColor: $black;
+$accentTextColor: $havelockBlue;
+$extraTextColor: $silver;
+
+// Button colors
+$buttonColor: $havelockBlue;
+$buttonTextColor: $white;
+$buttonBorderColor: $white;
+
+$button2Color: $white;
+$button2TextColor: $shark;
+$button2BorderColor: $stormGray;
+
+// Scheme: Icon colors in the section with form
+$iconColor: $havelockBlue;
+$iconBgColor: $havelockBlue;
+$iconBorderColor: $jellyBean;
+
+// Scheme: Dot separators between icons in the section with form
+$iconsSeparator: $silver3;
+
+// Form: Select colors
+$selectColor: $white; //rgba($white, 0.85)
+$selectTextColor: $charade;
+$selectBorderColor: $white;
+$selectArrowColor: $black;
+// Form: Select _active
+$selectActiveColor: $brightGray;
+$selectActiveTextColor: $white;
+$selectHoverTextColor: $pictonBlue2;
+$selectContentBgColor: $charade;
+
+// Form: Inputs colors
+$inputColor: $white; //rgba($white, 0.85)
+$inputPlaceholderColor: $charade;
+$inputBorderColor: $white;
+
+// Form: Range colors
+$rangeColor: $white; //rgba($white, 0.70)
+$rangeBorderColor: $white;
+$rangeSliderColor: $pictonBlue2;
+$rangeSliderBorderColor: $jellyBean;
+
+// Form: File colors
+$fileBorderColor: $havelockBlue;
+
+// Footer: Payment systems colors in the footer
+$footerTextColor: $white;
+$linkTextColor: $silver2;
+$link2TextColor: $white;
+$footerIconColor: $havelockBlue;
+
+// Footer: Line separators in the footer
+$footerItemsSeparator: $silver2;
+
+
+
+// Media
+$media_xxxl: 'max-width: 1400px';
+$media_xxl: 'max-width: 1300px';
+$media_xl: 'max-width: 1200px';
+$media_lg: 'max-width: 1100px';
+$media_lg2: 'max-width: 991px'; // media_991
+$media_lg3: 'max-width: 900px';
+$media_md: 'max-width: 767px'; // media_767
+$media_md2: 'max-width: 700px';
+$media_sm: 'max-width: 600px';
+$media_sm2: 'max-width: 479px'; // media_479
+$media_xs: 'max-width: 400px';

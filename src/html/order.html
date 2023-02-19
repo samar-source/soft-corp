@@ -1,0 +1,73 @@
+<div class="order">
+    <div class="container">
+        <h2 class="order__title">Оформление <span data-aos="fade-left" style="display:inline-block">Заказа</span></h2>
+        <p class="order__text--top">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        <div class="order__scheme scheme">
+            <div class="scheme__item">
+                <span class="scheme__icon search" data-aos="flip-up"></span>
+                <p class="scheme__text"><span lang="en-EN">Lorem ipsum dolor sit amet</span></p>
+                <span class="scheme__separator"></span>
+            </div>
+            <div class="scheme__item">
+                <span class="scheme__icon rate" data-aos="flip-up"></span>
+                <p class="scheme__text"><span lang="en-EN"></span>Сonsecteturadipiscing elit</span></p>
+                <span class="scheme__separator"></span>
+            </div>
+            <div class="scheme__item">
+                <span class="scheme__icon letter" data-aos="flip-up"></span>
+                <p class="scheme__text"><span lang="en-EN">Sed do eiusmod tempor</span></p>
+                <span class="scheme__separator"></span>
+            </div>
+            <div class="scheme__item">
+                <span class="scheme__icon mail" data-aos="flip-up"></span>
+                <p class="scheme__text"><span lang="en-EN">Esse cillum doloreeu fugiat</span></p>
+                <span class="scheme__separator"></span>
+            </div>
+            <div class="scheme__item">
+                <span class="scheme__icon money" data-aos="flip-up"></span>
+                <p class="scheme__text"><span lang="en-EN">Excepteur sint occaecat cupidatat non proident</span></p>
+                <span class="scheme__separator"></span>
+            </div>
+        </div>
+        <form class="form" action="#" method="post" target="_blank">
+            <div class="form__item select" data-state="">
+                <div class="select__title" data-default="Выберите тип системы">Выберите тип системы</div>
+                <div class="select__content">
+                    <input id="selectOption1" class="select__input" type="radio" name="selectOption" checked />
+                    <label for="selectOption1" class="select__label">Sed ut perspiciatis
+                    </label>
+                    <input id="selectOption2" class="select__input" type="radio" name="selectOption" />
+                    <label for="selectOption2" class="select__label">Nemo enim ipsam
+                    </label>
+                    <input id="selectOption2" class="select__input" type="radio" name="selectOption" />
+                    <label for="selectOption3" class="select__label">Et harum quidem</label>
+                    <input id="selectOption4" class="select__input" type="radio" name="selectOption" />
+                    <label for="selectOption4" class="select__label">Temporibus autem
+                    </label>
+                    <input id="selectOption5" class="select__input" type="radio" name="selectOption" />
+                    <label for="selectOption5" class="select__label">Itaque earum rerum</label>
+                </div>
+            </div>
+            <div class="form__item">
+                <input type="email" name="formEmail[]" placeholder="Ваш e-mail" id="email" required>
+            </div>
+            <div class="form__item">
+                <input type="text" name="formText[]" placeholder="Ваше имя" id="name" required>
+            </div>
+            <div class="form__item range">
+                <label class="range__label">
+                    <p class="range__text"><span lang="en-EN">Sed&#160;ut perspiciatis, unde omnis iste&#160;natus</span></p>
+                    <p><span id="range__value">75&#160;&#37;</span></p>
+                </label>
+                <input type="range" name="formRange[]" id="range" min="0" max="100" value="75" step="1" onchange="document.getElementById('range__value').innerHTML = this.value;">
+            </div>
+            <div class="form__item add-file">
+                <label class="add-file__label" for="file">
+                    <svg class="add-file__icon"><use x="0" y="0" xlink:href="@img/icons/icons.svg#add" /></svg> Прикрепить файл
+                </label>
+                <input type="file" name="formFile[]" id="file" accept="application/msword, application/vnd.ms-excel, application/pdf">
+            </div>
+            <button type="submit" id="submit" data-aos="zoom-in">Отправить</button>
+        </form>
+    </div>
+</div>
