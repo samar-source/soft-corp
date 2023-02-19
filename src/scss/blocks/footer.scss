@@ -16,18 +16,6 @@
             color: $footerTextColor;
             border-right: 1px solid $footerItemsSeparator;
             padding-right: 55px;
-            // &::after {
-            //     content: "";
-            //     position: absolute;
-            //     top: 0;
-            //     bottom: 0;
-            //     right: 0;
-            //     left: auto;
-            //     display: block;
-            //     width: 1px;
-            //     height: 18px;
-            //     background-color: $footerItemsSeparator;
-            // }
         }
         .solucionis-system {
             display: flex;
