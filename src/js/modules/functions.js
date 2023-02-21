@@ -28,6 +28,24 @@ if (iconMenu) {
 }
 
 
+// Active class of menu items onscroll
+window.addEventListener('scroll', () => {
+	let scrollDistance = window.scrollY;
+	if (window.innerWidth > 768) {
+		document.querySelectorAll('.section').forEach((el, i) => {
+			if (el.offsetTop - document.querySelector('.menu__list').clientHeight <= scrollDistance) {
+				document.querySelectorAll('.menu__list a').forEach((el) => {
+					if (el.classList.contains('_active')) {
+						el.classList.remove('_active');
+					}
+				});
+				document.querySelectorAll('.menu__list li')[i].querySelector('a').classList.add('_active');
+			}
+		});
+	}
+});
+
+
 // Scrolling when clicked
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0){
