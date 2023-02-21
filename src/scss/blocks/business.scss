@@ -72,6 +72,9 @@
 @media ($media_md) {
     .business {
         padding: 103px 0px 102px;
+        .business__title {
+            margin-bottom: 40px;
+        }
     }
 }
 

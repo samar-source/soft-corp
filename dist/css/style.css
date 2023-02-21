@@ -2717,6 +2717,9 @@ button.swiper-pagination-bullet {
   .business {
     padding: 103px 0px 102px;
   }
+  .business .business__title {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 479px) {
   .business .business__container h1 {
