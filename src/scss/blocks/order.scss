@@ -121,7 +121,8 @@
                 }
             }
             .select__content {
-                opacity: 1;
+                // opacity: 1;
+                display: flex;
             }
             .select__label + .select__input + .select__label {
                 cursor: pointer;
@@ -156,7 +157,7 @@
         position: absolute;
         top: 46px;
         left: 0px;
-        display: flex;
+        display: none;
         flex-direction: column;
         gap: 15px;
         text-align: start;
@@ -168,7 +169,7 @@
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         transition: all 0.3s ease-out;
-        opacity: 0;
+        // opacity: 0;
         z-index: 8;
         .select__input {
             display: none;

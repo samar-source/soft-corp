@@ -86,12 +86,14 @@ if (menuLinks.length > 0){
 const selectSingle = document.querySelector('.select');
 const selectSingle_title = selectSingle.querySelector('.select__title');
 const selectSingle_labels = selectSingle.querySelectorAll('.select__label');
+
 // Toggle select menu
 selectSingle_title.addEventListener('click', () => {
 	if ('active' === selectSingle.getAttribute('data-state')) {
 		selectSingle.setAttribute('data-state', '');
 	} else {
 		selectSingle.setAttribute('data-state', 'active');
+		// square.style.display = 'flex';
 	}
 });
 // Close select content when click to option
