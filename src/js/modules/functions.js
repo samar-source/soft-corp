@@ -31,7 +31,7 @@ if (iconMenu) {
 // Active class of menu items onscroll
 window.addEventListener('scroll', () => {
 	let scrollDistance = window.scrollY;
-	if (window.innerWidth > 768) {
+	// if (window.innerWidth > 768) {
 		document.querySelectorAll('.section').forEach((el, i) => {
 			if (el.offsetTop - document.querySelector('.menu__list').clientHeight <= scrollDistance) {
 				document.querySelectorAll('.menu__list a').forEach((el) => {
@@ -42,7 +42,7 @@ window.addEventListener('scroll', () => {
 				document.querySelectorAll('.menu__list li')[i].querySelector('a').classList.add('_active');
 			}
 		});
-	}
+	// }
 });
 
 
